@@ -75,7 +75,7 @@ def main():
     test_images = test_images / 255.0
 
     # compile and run
-    if exists('model.h5'):
+    if exists('../MNIST Digit Classification/model.h5'):
         model = tf.keras.models.load_model('model.h5')
         print('Model Loaded Successfully!')
     else:
