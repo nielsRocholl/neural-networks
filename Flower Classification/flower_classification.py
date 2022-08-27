@@ -106,7 +106,7 @@ def main():
 
     train_ds, val_ds = image_input_pipeline(data_dir=data_dir)
 
-    print('Train model with data preocessed by "finer_input_pipeline":')
+    print('Train model with data preprocessed by "image_input_pipeline":')
     model.fit(train_ds, validation_data=val_ds, epochs=3)
 
 
