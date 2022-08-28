@@ -33,6 +33,10 @@ def image_input_pipeline(data_dir=None):
     train_ds = train_ds.map(lambda x: process_path(x, class_names), num_parallel_calls=AUTOTUNE)
     val_ds = val_ds.map(lambda x: process_path(x, class_names), num_parallel_calls=AUTOTUNE)
 
+    # normalize rgb channel
+    # train_ds = normalize(train_ds)
+    # val_ds = normalize(val_ds)
+
     train_ds = configure_for_performance(train_ds)
     val_ds = configure_for_performance(val_ds)
 
