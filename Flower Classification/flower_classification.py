@@ -1,10 +1,6 @@
 import os
-
 import keras
-import numpy as np
-import pandas as pd
 import tensorflow as tf
-import keras_tuner as kt
 import matplotlib.pyplot as plt
 
 from tensorflow.keras import Sequential
